@@ -12,6 +12,37 @@
   height:100;
 }
 
+.catalog_image {
+  width:200px;
+  height:200px;
+}
+
+.catalog_container {
+  width:200;
+  height:400;
+  margin:"10px";
+}
+
+.left {
+  display: flex;
+  justify-content: space-around;
+  background-color: hsla(0, 0%, 100%, .98);
+  widows: 47px;
+  height: 104px;
+  position: absolute;
+  top:calc(50% - 52px)
+}
+.right {
+  display: flex;
+  justify-content: space-around;
+  background-color: hsla(0, 0%, 100%, .98);
+  widows: 47px;
+  height: 104px;
+  position: absolute;
+  top:calc(50% - 52px)
+
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

@@ -22,7 +22,7 @@ const Carousel = ()=>{
     
      return(
          <div>
-          <div id="myCarousel" className="carousel slide" data-ride="carousel" style={{margin:"auto",width:1000,height:400}}>
+          <div id="myCarousel" className="carousel slide" data-ride="carousel" style={{width:"100%",height:200}}>
   
             <ol className="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
@@ -36,12 +36,12 @@ const Carousel = ()=>{
 
           <div className="carousel-inner">
             <div className="item active">
-             <img src="https://4.imimg.com/data4/QC/XV/MY-10093329/college-bag-500x500.jpg" style={{margin:"auto",width:400,height:200}}/>
+             <img src="https://4.imimg.com/data4/QC/XV/MY-10093329/college-bag-500x500.jpg" style={{margin:"auto",width:500,height:200}}/>
              </div>
             {
               product.map((prod)=>(
                 <div className="item">
-                    <img src={prod.image} style={{width:400,height:200}} onClick={getDeatils}/>
+                    <img src={prod.image} style={{margin:"auto",width:500,height:200}} onClick={getDeatils}/>
                     {prod.description}
                  </div>
               ))
